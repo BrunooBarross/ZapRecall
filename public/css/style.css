@@ -66,6 +66,9 @@ body{
     line-height: 25px;        
     color: #FFFFFF;
 }
+.exibir{
+    display: block;
+}
 .questao{   
     position: relative;
     display: flex;
@@ -121,9 +124,6 @@ body{
 }
 .esconder{
     display: none;
-}
-.exibir{
-    display: block;
 }
 
 
