@@ -2,11 +2,11 @@ import { useState } from "react";
 
 function Cards(props) {
     let [questao, setQuestao] = useState('exibir');
-    let [pergunta, setPergunta] = useState('pergunta escondida');
+    let [pergunta, setPergunta] = useState('esconder');
     
     function exibirPergunta(){
-        setQuestao(questao = 'questao escondida');
-        setPergunta(pergunta = 'pergunta exibir');
+        setQuestao(questao = 'esconder');
+        setPergunta(pergunta = 'exibir');
     }
 
     return (
@@ -22,5 +22,4 @@ function Cards(props) {
         </>        
     );                
 }
-
 export default Cards;

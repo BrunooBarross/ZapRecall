@@ -119,8 +119,11 @@ body{
     bottom: 7px;
 
 }
-.escondida{
+.esconder{
     display: none;
+}
+.exibir{
+    display: block;
 }
 
 
