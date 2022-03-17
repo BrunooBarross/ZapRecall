@@ -13,6 +13,7 @@ function Cards(props) {
         <>
             <div className={"questao " + questao } onClick={exibirPergunta}>
                 <span>{props.questao} {props.indice +1}</span>
+                <ion-icon name="play-outline"></ion-icon>
             </div>
             <div className={"pergunta " + pergunta}>
                 <span>{props.pergunta}</span>

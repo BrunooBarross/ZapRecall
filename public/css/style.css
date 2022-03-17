@@ -67,6 +67,7 @@ body{
     color: #FFFFFF;
 }
 .questao{   
+    position: relative;
     display: flex;
     align-items: center;
     width: 340px;
@@ -83,6 +84,12 @@ body{
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
+    color: #333333;
+}
+.questao ion-icon{
+    position: absolute;
+    font-size: 30px;
+    right: 12px;
     color: #333333;
 }
 .pergunta{
