@@ -10,7 +10,8 @@ function FlashCards(){
         {questao: 'Pergunta', pergunta: 'Usamos props para __'},
         {questao: 'Pergunta', pergunta: 'Usamos estado (state) para __'}
     ];
-
+    
+    dados.sort(() => Math.random() - 0.5);
     return (
         <div className="pagina-card">
             <div className="logo">
