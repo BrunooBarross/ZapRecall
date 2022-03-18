@@ -1,6 +1,7 @@
 import { useState } from "react";
 import TelaInicial from "./Inicio/TelaInicial";
 import FlashCards from "./Jogo/FlashCards";
+import Footer from "./Footer/footer";
 
 export default function App() {
   let [tela, setTela] = useState(false);
@@ -11,7 +12,7 @@ export default function App() {
 
   return ( 
     <>
-      {tela === false ? <TelaInicial fn={startTela}/> : <FlashCards /> }
+      {!tela ? <TelaInicial startTela={startTela}/> : <> <FlashCards /> <Footer /> </> }
     </>
     
   );

@@ -1,25 +1,30 @@
-import { useState } from "react";
+import React from "react";
+import Botoes from "./Botoes";
 
 function Cards(props) {
-    let [questao, setQuestao] = useState('exibir');
-    let [pergunta, setPergunta] = useState('esconder');
-    
-    function exibirPergunta(){
-        setQuestao(questao = 'esconder');
-        setPergunta(pergunta = 'exibir');
-    }
+    const [selected, setSelected] = React.useState('questao'); 
 
-    return (
-        <>
-            <div className={"questao " + questao } onClick={exibirPergunta}>
+    function selecionar(selecionado) {
+        setSelected(selecionado);
+    }
+    
+    return selected === 'questao' ?( 
+            <div className={"questao"} onClick={() => selecionar('pergunta')}>
                 <span>{props.questao} {props.indice +1}</span>
                 <ion-icon name="play-outline"></ion-icon>
-            </div>
-            <div className={"pergunta " + pergunta}>
-                <span>{props.pergunta}</span>
-                <img className="virar-card" src="img/Vector.png" alt="virar" />
-            </div>
-        </>        
+            </div>             
+        ) :(
+            selected === 'pergunta' ? 
+                <div className={"pergunta"}>
+                    <span>{props.pergunta}</span>
+                    <img className="virar-card" src="img/Vector.png" alt="virar" 
+                    onClick={() => selecionar('resposta')}/>
+                </div> 
+            : 
+                <div className={"pergunta"}>
+                    <span>{props.resposta}</span>
+                    <Botoes />  
+                </div>                        
     );                
 }
 export default Cards;
