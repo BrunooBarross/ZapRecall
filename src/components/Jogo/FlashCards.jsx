@@ -1,4 +1,6 @@
 import Cards from "./Cards";
+import Header from "./Header";
+
 function FlashCards(props){
     const dados = [
         {questao: 'Pergunta', pergunta: 'O que é JSX?', resposta: 'Uma extensão de linguagem do JavaScript'},
@@ -14,10 +16,7 @@ function FlashCards(props){
     dados.sort(() => Math.random() - 0.5);
     return (
         <div className="pagina-card">
-            <div className="logo">
-                <img src="img/logo.png" alt="logo"/>
-                <h1 className='h1-inicio'>ZapRecall</h1>
-            </div>
+            <Header />
             <div className="container-cards">
                 {dados.map((dado,indice) =>
                     <Cards  questao={dado.questao} 

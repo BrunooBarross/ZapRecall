@@ -18,6 +18,7 @@ export default function App() {
     let arrayAnterior = [...icones];
     arrayAnterior.push(icone)
     setIcones(icones = arrayAnterior)
+    console.log(icones[0].props.alt);
 
   }
 
