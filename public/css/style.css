@@ -187,15 +187,13 @@ body {
     line-height: 14px;
     color: #FFFFFF;
 }
-.botao-nao{
-    background-color:#FF3030;;
-}
-.botao-quase{
-    background-color: #FF922E;
-}
-.botao-zap{
-    background-color: #2FBE34;
-}
-.esconder {
-    display: none;
-}
+.botao-nao{background-color:#FF3030;}
+.botao-quase{background-color: #FF922E;}
+.botao-zap{background-color: #2FBE34;}
+.esconder {display: none;}
+.vermelho span{text-decoration-line: line-through;color: #FF3030;}
+.vermelho ion-icon{color: #FF3030;}
+.laranja span{ text-decoration-line: line-through;color: #FF922E;}
+.laranja ion-icon{color: #FF922E;}
+.verde span{text-decoration-line: line-through;color: #2FBE34;}
+.verde ion-icon{color: #2FBE34;}
