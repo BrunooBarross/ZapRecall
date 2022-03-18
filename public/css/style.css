@@ -19,22 +19,23 @@ body {
     border: 1px solid #DBDBDB;
 }
 .tela-inicial img {
-    width: 55px;
-    height: 65px;
+    width: 136px;
+    height: 161px;
     margin-top: 90px;
 }
 .tela-inicial h1 {
+    margin-top: 13px;
     font-family: 'Righteous';
     font-weight: 400;
-    font-size: 25px;
-    line-height: 31px;
+    font-size: 36px;
     color: #FFFFFF;
 }
 .tela-inicial button {
-    width: 141px;
-    height: 31px;
-    margin-top: 73px;
+    width: 246px;
+    height: 54px;
+    margin-top: 30px;
     background: #FFFFFF;
+    border: 1px solid #D70900;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     border: none;
@@ -73,15 +74,16 @@ header {
     margin-top: 22px;
 }
 .logo img {
-    width: 26px;
-    height: 30px;
+    width: 52px;
+    height: 60px;
+    margin-right: 10px;
 }
 .logo h1 {
     font-family: 'Righteous';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 36px;
+    line-height: 45px;
     color: #FFFFFF;
 }
 .exibir {
@@ -92,11 +94,11 @@ header {
     display: flex;
     align-items: center;
     width: 340px;
-    height: 40px;
+    height: 65px;
     background: #FFFFFF;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 .questao span {
     width: 90px;
@@ -104,22 +106,24 @@ header {
     font-family: 'Recursive';
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 19px;
 
     color: #333333;
 }
 .questao img {
     position: absolute;
-    right: 12px;
+    right: 15px;
+    width: 23px;
+    height: 23px;
 }
 .pergunta {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 340px;
-    height: 80px;
-    margin-top: 5px;
+    height: 131px;
+    margin-top: 10px;
     background: #FFFFD5;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
@@ -130,8 +134,8 @@ header {
     font-family: 'Recursive';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 18px;
+    line-height: 22px;
 
     color: #333333;
 }
@@ -148,23 +152,29 @@ header {
     align-items: center;
     position: fixed;
     width: 100%;
-    height: 50px;
+    min-height: 50px;
     bottom: 0;
     background: #FFFFFF;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
 }
 .footer span {
+    width: 150px;
     margin-top: 10px;
+    text-align: center;
     font-family: 'Recursive';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
+    margin-bottom: 12px;
 
     color: #333333;
 }
 .footer ion-icon {
     font-size: 25px;
+}
+.footer-icones{
+    margin-bottom: 12px;
 }
 .botao {
     width: 100%;
@@ -172,7 +182,7 @@ header {
     display: flex;
     justify-content: space-around;
     position: absolute;
-    bottom: 3px;
+    bottom: 12px;
 }
 .botao button {
     display: flex;
@@ -180,15 +190,15 @@ header {
     justify-content: center;
 
     width: 30%;
-    min-height: 28px;
+    min-height: 37px;
     border: none;
     border-radius: 5px;
 
     font-family: 'Recursive';
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
-    line-height: 10px;
+    font-size: 12px;
+    line-height: 14px;
     color: #FFFFFF;
 }
 .botao-nao {background-color: #FF3030;}

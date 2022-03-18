@@ -1,10 +1,12 @@
 function Footer(props){
-    const {contador, icones} = props;
-
+    const {contador, icones, textoFooter} = props;    
     return(
         <footer className="footer">                  
-            <span>{contador}/8 CONCLUÍDOS</span>
-            <div>{icones}</div>     
+            {textoFooter === undefined ? <span>{contador}/8 CONCLUÍDOS</span> : 
+                textoFooter === true ?  <span>errou</span> :
+                <span>/acertou tudo</span>
+            }   
+            <div className="footer-icones">{icones}</div>     
         </footer>        
     )
 }  

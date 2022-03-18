@@ -2,9 +2,9 @@ function Botoes(props){
     const {selecionar} = props;
     
     let errou, quase, acertou;
-    errou = <img src="img/errado.png" alt="não lembrou" />;
-    quase = <img src="img/quase.png" alt="quase acertou" />
-    acertou = <img src="img/certo.png" alt="acertou" />
+    errou = <img src="img/errado.png" data="errado" alt="não lembrou" />;
+    quase = <img src="img/quase.png" data="quase" alt="quase acertou" />
+    acertou = <img src="img/certo.png" data="certo" alt="acertou" />
 
     return (
         <div className="botao">
