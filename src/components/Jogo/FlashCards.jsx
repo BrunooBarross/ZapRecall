@@ -1,5 +1,5 @@
 import Cards from "./Cards";
-function FlashCards(){
+function FlashCards(props){
     const dados = [
         {questao: 'Pergunta', pergunta: 'O que é JSX?', resposta: 'Uma extensão de linguagem do JavaScript'},
         {questao: 'Pergunta', pergunta: 'O React é __ ', resposta: 'uma biblioteca JavaScript para construção de interfaces'},
@@ -24,6 +24,8 @@ function FlashCards(){
                             indice = {indice}
                             pergunta = {dado.pergunta}
                             resposta ={dado.resposta}
+                            funcaoContar={props.funcaoContar}
+                            iconesFooter={props.iconesFooter}
                     />
                 )}
             </div>            

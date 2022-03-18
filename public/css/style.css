@@ -106,11 +106,9 @@ body {
     color: #333333;
 }
 
-.questao ion-icon {
+.questao img{
     position: absolute;
-    font-size: 30px;
     right: 12px;
-    color: #333333;
 }
 
 .pergunta {
@@ -146,22 +144,26 @@ body {
 
 .footer{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
+    position: fixed;    
     width: 100%;
-    height: 50px;    
+    height: 70px;
+    bottom: 0;    
     background: #FFFFFF;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
-    z-index: 40;
+
 }
 
 .footer span{
+    margin-top: 10px;
     font-weight: 400;
     font-size: 18px;
-    line-height: 14px;
+    line-height: 25px;
     color: #333333;
+}
+.footer ion-icon{
+    font-size: 25px;
 }
 
 .botao{
@@ -192,8 +194,8 @@ body {
 .botao-zap{background-color: #2FBE34;}
 .esconder {display: none;}
 .vermelho span{text-decoration-line: line-through;color: #FF3030;}
-.vermelho ion-icon{color: #FF3030;}
 .laranja span{ text-decoration-line: line-through;color: #FF922E;}
-.laranja ion-icon{color: #FF922E;}
 .verde span{text-decoration-line: line-through;color: #2FBE34;}
-.verde ion-icon{color: #2FBE34;}
+.footer img{
+    margin-right: 3px;
+}

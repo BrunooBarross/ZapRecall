@@ -2,21 +2,25 @@ import React from "react";
 import Botoes from "./Botoes";
 
 function Cards(props) {
-    let [selected, setSelected] = React.useState('questao'); 
-    let [finalizar, setFinalizar] = React.useState('questao');
-    let [status, setStatus] = React.useState('verde');
+    let [selected, setSelected] = React.useState('questao');    
+    let [status, setStatus] = React.useState();
+    let [finalizar, setFinalizar] = React.useState();
 
-    function selecionar(selecionado, riscarQuestao) {
+    function selecionar(selecionado, classeCor, statusQuestao) {
         setSelected(selecionado);
-        setFinalizar(finalizar= `questao ${riscarQuestao}`);
-        setStatus(status = riscarQuestao);
+        if(classeCor !== undefined && statusQuestao !== undefined){
+            setFinalizar(finalizar = `questao ${classeCor}`);
+            setStatus(status = statusQuestao);
+            props.funcaoContar();
+            props.iconesFooter(statusQuestao);
+        }        
     }
 
     if(selected === 'questao'){
         return (
-            <div className={finalizar} onClick={() => selecionar('pergunta')}>
+            <div className={selected} onClick={() => selecionar('pergunta')}>
                 <span>{props.questao} {props.indice +1}</span>
-                <ion-icon name="play-outline"></ion-icon>             
+                <img src="img/play.png" alt="" />
             </div>  
         );
         
@@ -24,9 +28,7 @@ function Cards(props) {
         return (
             <div className={finalizar}>
                 <span>{props.questao} {props.indice +1}</span>
-                {status === 'vermelho' ? <ion-icon name="close-circle"></ion-icon>   :
-                status === 'laranja' ? <ion-icon name="help-circle"></ion-icon> :
-                <ion-icon name="checkmark-circle"></ion-icon>}
+                {status}
             </div>  
         );
     }else if(selected === 'pergunta'){
