@@ -97,9 +97,15 @@ header {
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     margin-top: 10px;
+
+    transform-style: preserve-3d;
+    transition: 1.0s; 
+}
+.questao:active{
+    transform: scale(0.97);
 }
 .questao:nth-last-child(1){
-    margin-bottom: 100px;
+    margin-bottom: 25px;
 }
 .questao span {
     width: 90px;
@@ -129,9 +135,14 @@ header {
     background: #FFFFD5;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
+    transform-style: preserve-3d;
+    transition: 1.0s;  
+}
+.pergunta:active{
+    transform: scale(0.97);
 }
 .pergunta:nth-last-child(1){
-    margin-bottom: 100px;
+    margin-bottom: 25px;
 }
 .pergunta span {
     margin-top: 13px;
@@ -155,7 +166,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;
+    position: sticky;
     width: 100%;
     min-height: 50px;
     bottom: 0;
